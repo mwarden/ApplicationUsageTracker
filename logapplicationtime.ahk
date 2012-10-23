@@ -14,6 +14,6 @@ Loop {
     
     ; Log the title and duration of the active window.
     if (ActiveAppName == "ER/Studio Data Architect")
-        FileAppend, %A_NowUTC% %ActiveTime% seconds %ActiveTitle%`n, erstudio_usage_log.txt
+        FileAppend, %A_YYYY%-%A_MM%-%A_DD% %A_Hour%:%A_Min% Usage: %ActiveTime% seconds %ActiveTitle%`n, erstudio_usage_log.txt
     
 }
